@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Duke CHANCE Tutoring</title>
+	<!-- Local Javascript -->
+	<script src="assets/index.js"></script>
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="assets/index.css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Arbutus+Slab|Belgrano|Hammersmith+One|Nunito:400,700|Actor|Averia+Libre' rel='stylesheet' type='text/css'>	
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuARmhP5xZo2s6AEGjaW62njKD0xWppE0&sensor=false">
+    </script>
+	
+	<script type="text/javascript">
+      function initialize() {
+		var myLatlng = new google.maps.LatLng(36.005, -78.915471);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 18,	
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+		map.setTilt(0);
+		
+		var infowindow = new google.maps.InfoWindow({
+		position: new google.maps.LatLng(36.0058, -78.9159),
+		content: "Parking",
+		maxWidth: 500
+		});
+
+		var infowindow2 = new google.maps.InfoWindow({
+		position: new google.maps.LatLng(36.0046, -78.9149),
+		content: "Parking",
+		maxWidth: 500
+		});
+		
+		var infowindow3 = new google.maps.InfoWindow({
+		content: "CHANCE meets here in room 108B.",
+		});
+		
+		var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title:"CHANCE Tutoring: West Duke Building"
+		});
+		
+		marker.setAnimation(google.maps.Animation.DROP);
+		infowindow.open(map);
+		infowindow2.open(map);
+		infowindow3.open(map,marker);
+      }
+    </script>
+
+	
+</head>	
+
+<body onload="initialize()" topmargin="0" leftmargin="0" vlink="#020144" alink="#020144">>
+
+	<header id="header">
+		<img id = "logo" src="Logo.jpg">
+	</header>
+	
+	<section id = "content">
+		
+		<section class="pane" id = "welcome">
+		<h2 class="super-header">Welcome to CHANCE!</h2>
+		<p class="big-body-text">We offer free tutoring for all Durham high school and middle school students.</p>
+		</section>
+		
+		<section class="pane" id = "get-involved">
+		<h2>Get Involved:</h2>
+		<h1>High school and middle school students</h1>
+		<p> 
+		<!-- Don't forget to point out that we currently have a waitlist -->
+		We welcome all Durham high school and middle school students for free SAT and subject tutoring!
+		Meetings are every Tuesday from 7-9 in the West Duke Building on Duke University's East Campus.
+		If you're interested in attending, fill out <a href="StudentInformationSheet.doc">the application</a> and send it to us at <a href="chance-request@duke.edu">chance-request@duke.edu</a>.
+		</p>
+		<h1>Duke students</h1>
+		<p>
+		We're seeking Duke students to volunteer as SAT and subject tutors. It's just two hours a session. We'd love to see you here every week, but we're happy to see you even if you can only make it once in a while. 
+		</p>
+		</section>
+		
+<!-- 	<section class="pane" id = "announcements">
+		<h2>Announcements</h2>
+		</section> -->
+		
+		
+		<section class="pane" id = "schedule">
+		<h2>Schedule</h2>
+		<p>
+		We hold our tutoring sessions every Tuesday from 7-9 PM. The spring 2014 semester runs from
+		January 14 through April 22. We do NOT have tutoring on March 11 due to spring break.
+		</p>
+		</section>
+		
+		<section class="pane" id = "directions">
+			<h2>Directions</h2>
+				<p>
+				Tutoring sessions are held in Room 108B of the West Duke Building on Duke's East Campus.
+				</p>
+				
+<!-- 				<div id="map_canvas" style="width:500px; height:400px"></div> -->
+
+				<p>
+				From Main Street, turn on to Campus Drive. (This is the main entrance to East Campus.) The West Duke Building is on your left, before the traffic circle with the statue. You may park along Campus Drive, or in the parking lot marked on the map.
+				</p>
+		</section>
+		
+		<section class="pane" id = "exec-board">
+		
+<!-- 			This might not be necessary on the main page.
+			Also it might be good to put up contact info. -->
+			<h2>Executive Board</h2>
+			
+			<h3>Presidents</h3>
+				<p>Molly Kuo and Mike Gloudemans</p>
+			<h3>Vice-Presidents</h3>
+				<p>Maddie Melnick and Connor Gordon</p>
+			<h3>Treasurer</h3>
+				<p>Kevin Keppel</p>
+			<h3>Secretary</h3>
+				<p>Ji Won Park</p>
+			<h3>PR Chairs</h3>
+				<p>Isabel Callaway and Sarah Bender</p>
+				
+		</section>
+		
+
+		
+	</section>
+	
+	<footer id="footer">
+		<section id = "contact">
+			<h4><a href="mailto:chance-request@duke.edu">Contact Us</a></h4>
+		</section>
+	</footer>
+	
+</body>
+
+</html>

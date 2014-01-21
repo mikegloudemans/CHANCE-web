@@ -1,0 +1,80 @@
+#header
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	text-align: right;
+	border-bottom-style:solid;
+	border-width: 3px;
+	display:block;
+	width:100%;
+	background:#FFFFFF;
+}
+
+#footer
+{
+	margin-left: 200px;
+	margin-right:200px;
+	padding-bottom: 75px;
+}
+
+#content
+{
+	margin-top: 120px;
+}
+
+#logo
+{
+	width: 400px;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+.pane
+{
+	padding-top: 20px;
+	margin-left: 200px;
+	margin-right:200px;
+	padding-bottom: 55px;
+	border-bottom-style:solid;
+	border-width: 1px;
+}
+
+.super-header
+{
+	font-size: 35pt;
+}
+
+.big-body-text
+{
+	font-size: 18pt;
+}
+
+h1, h2, h3, h4
+{
+	font-family: 'Nunito', sans-serif;
+}
+
+h1
+{
+	padding-top: 24px;
+}
+
+h2
+{
+	padding-top: 16px;
+}
+
+h3
+{
+	padding-top: 12px;
+}
+
+p 
+{
+	font-family: 'Actor', sans-serif;
+	padding-top: 8px;
+}
